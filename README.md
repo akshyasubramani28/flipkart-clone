@@ -6,7 +6,7 @@ This project mimics the look and feel of Flipkart’s homepage with navigation b
 ---
 
 ## 📸 Preview
-![Project Screenshot](Screenshot%20(44).png)
+![Project Screenshot](Screenshot(44).png)
 
 ---
 
