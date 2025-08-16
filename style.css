@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/* HEADER */
+header { 
+    background-color: #2874f0;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100px;
+    margin-left: 20px;
+}
+
+/* SEARCH BAR */
+.search input {
+    border: none;
+    padding: 10px 15px;
+    width: 500px;
+    border-radius: 2px;
+}
+
+/* DROPDOWNS */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.dropdown span {
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown-conent {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-conent {
+    display: block;
+}
+
+.dropdown .dropdown-conent p {
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.dropdown .dropdown-conent p:hover {
+    background-color: #f1f1f1;
+}
+
+/* CART */
+.cart {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.cart img {
+    width: 28px;
+    margin-right: 5px;
+}
+
+/* CATEGORY BAR */
+.bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.bar div {
+    text-align: center;
+    cursor: pointer;
+}
+
+.bar img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.bar h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+}
+
+.bar div:hover h4 {
+    color: #2874f0;
+}
+
+/* SLIDER */
+.slider {
+    background-color: #F1F3F6;
+    padding: 20px 0;
+}
+
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Next & prev buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 12px;
+    margin-top: -22px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 3px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #2874f0;
+}
+
+/* DEAL SECTIONS */
+.topDeal {
+    background-color: #F1F3F6;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.top1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 20px;
+}
+
+.top1 h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.top1 button {
+    background-color: #2874f0;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.top1 button:hover {
+    background-color: #0b5ed7;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.content div {
+    background: white;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 180px;
+    transition: 0.3s;
+}
+
+.content div:hover {
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.content img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.green {
+    color: green;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background-color: #172337;
+    color: white;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    flex-wrap: wrap;
+}
+.footer-heading p {
+    color: #878787;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.footer-list a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin: 3px 0;
+}
+.footer-list a:hover { text-decoration: underline; }
+.footer-list-address p { font-size: 12px; margin: 3px 0; }
+.footer-row2 {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #454d5e;
+    padding: 15px 60px;
+    margin-top: 20px;
+}
+.footer-row2-col p {
+    font-size: 14px;
+}
